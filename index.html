@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Vuejs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="app">
+    {{ deleteLater }}
+
+
+    <div class="col-md-2 userlist">
+        Online User
+        <div class="panel-heading">
+            <span class="glyphicon glyhpicon-user"></span> Online (5)
+        </div>
+        <ul class="chat">
+            <li>user 1</li>
+            <li>user 2</li>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div id="livechat-container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Lets Chat
+                </div>
+                <div class="panel-body">
+                    <ul class="chat" id="messages">
+                        <li class="left clearfix">
+                            <div class="info">
+                                User 1 has joined
+                            </div>
+                            <div class="user-item">
+                            <span class="chat-img pull-left">
+                                <img src="https://picsum.photos/200/300/?random" alt="">
+                            </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">User 1</strong>
+                                        <small class="pull-right text-muted">
+                                            <span class="glyphicon glyphicon-time"></span></small>
+                                    </div>
+                                    <p>Hello there</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Message 2</li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <form action="">
+                        <input type="text" name="" class="form-control input-lg" placeholder="Type chat here" id="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      deleteLater: "Hello World",
+      connectUsers: [],
+      messages: [],
+      message: {
+        "type": "",
+        "action": "",
+        "user": "",
+        "text": "",
+        "timestmap": ""
+      },
+      areTyping: []
+    },
+    created: function () {
+
+    },
+    methods: {
+      send: function () {
+
+      },
+      userIsTyping: function (username) {
+
+      },
+      userAreTyping: function () {
+
+      },
+      stoppedTypinng: function () {
+
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

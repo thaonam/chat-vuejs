@@ -1,0 +1,26 @@
+{
+  "name": "chat-vuejs",
+  "version": "1.0.0",
+  "description": "Our chat room application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "vuejs"
+  ],
+  "author": "Thao",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaonam/chat-vuejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thaonam/chat-vuejs/issues"
+  },
+  "homepage": "https://github.com/thaonam/chat-vuejs#readme"
+}
